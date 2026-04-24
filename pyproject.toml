@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "toptica-digilock-110-control"
+version = "0.1.0"
+description = "Open-source Python control library for the Toptica DigiLock 110 via TCP/IP RCI"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  {name = "toptica-digilock-110-control contributors"}
+]
+license = {text = "MIT"}
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
